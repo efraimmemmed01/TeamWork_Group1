@@ -1,11 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Delish - Restaurant Template</title>
+    <meta name="description" content="Best food in London. Book a table at Delish Restaurant.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-wrapper">
+
+            <div class="header-top">
+                <div class="top-flex">
+                    <div><i class="fas fa-map-marker-alt"></i> Silk St, Barbican, London EC2Y 8DS, UK</div>
+                    <div class="top-links">
+                        <a href="#">Find a Store</a>
+                        <a href="#">Order Tracking</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-middle">
+                <div class="middle-flex">
+                    <div class="mobile-group">
+                        <div class="menu-trigger"><i class="fas fa-bars"></i></div>
+                        <span class="lang-switch">EN - IT</span>
+                    </div>
+                    <a href="#" class="brand-logo">DELISH</a>
+                    <a href="#" class="book-btn">Book A Table</a>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="middle-flex">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#">Home <i class="fas fa-angle-down"></i></a></li>
+                            <li><a href="#">Pages <i class="fas fa-angle-down"></i></a></li>
+                            <li><a href="#">Shop <i class="fas fa-angle-down"></i></a></li>
+                            <li><a href="#">Blog <i class="fas fa-angle-down"></i></a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-icons">
+                        <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                        <a href="#" aria-label="User Profile"><i class="far fa-user"></i></a>
+                        <a href="#" aria-label="Wishlist"><i class="far fa-heart"></i></a>
+                        <div class="cart-box">
+                            <a href="#" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="cart-badge">2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Content  -->
+        <div class="hero-content">
+            <h1>LUNCH & <br>HAPPY HOUR</h1>
+            <p>Check our latest seasonal promotions</p>
+            <a href="#" class="btn-white">Book A Table &rarr;</a>
+        </div>
+    </header>
+
+    <!--  FEATURES SECTION  -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="features-grid">
+                <div>
+                    <span class="badge">Crispy, Every Bite Taste</span>
+                    <h2 class="features-title">Delicious Food For <br>Healthy Life</h2>
+
+                    <div class="feature-item">
+                        <div class="feature-icon"><img src="assets/img/sec1.2.png" alt="" loading="lazy"></div>
+                        <div class="feature-text">
+                            <h4>Quality Food</h4>
+                            <p>The wise man therefore always holds in these matters to this principle of selection.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><img src="assets/img/sec1.3.png" alt="" loading="lazy"></div>
+                        <div class="feature-text">
+                            <h4>Supply Chain Maintain</h4>
+                            <p>The wise man therefore always holds in these matters to this principle of selection.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Book A Table</a>
+                </div>
+                <div>
+                    <img src="assets/img/sec1.4.jpg" alt="Food" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  PROMO BANNER  -->
+    <div class="promo-banner">
+        <div class="box-orange">
+            <h4 class="promo-title">Find Food Lounge</h4>
+            <span class="dots">....</span>
+            <p class="promo-address">18/8, New Ave 1000 New York<br>999 888 999 00<br>office@webmailfree.com</p>
+            <p class="promo-hours">Mon - Thu: 10 AM - 02 AM<br>Fri - Sun: 10 AM - 02 AM</p>
+        </div>
+        <div class="box-middle">
+            <div>
+                <div class="save-badge">
+                    <img src="assets/img/sec2.1.png" alt="" loading="lazy">
+                </div>
+                <div class="burger-content">
+                    <img src="assets/img/sec2.2.png" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="box-dark">
+            <h4 class="promo-title">Contact Us Now</h4>
+            <span class="dots">....</span>
+            <p class="promo-address">Sus nisl platea primis dignissim quam cras netus natoque vel senectus.</p>
+            <a href="#" class="btn-white promo-btn">Book A Table</a>
+        </div>
+    </div>
+
+    <!--  CATEGORIES  -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Make Reservation</span>
+                <h2>Discover Our Category</h2>
+                <span class="dots">....</span>
+            </div>
+            <div class="cat-grid">
+                <div class="cat-item">
+                    <div class="cat-img"><img src="assets/img/sec3.1.jpg" loading="lazy"></div>
+                    <a href="#" class="cat-btn">Tea & Drinks</a>
+                </div>
+                <div class="cat-item">
+                    <div class="cat-img"><img src="assets/img/sec3.2.jpg" loading="lazy"></div>
+                    <a href="#" class="cat-btn">Lunch Meal</a>
+                </div>
+                <div class="cat-item">
+                    <div class="cat-img"><img src="assets/img/sec3.3.jpg" loading="lazy"></div>
+                    <a href="#" class="cat-btn">Dinner Meal</a>
+                </div>
+                <div class="cat-item">
+                    <div class="cat-img"><img src="assets/img/sec3.4.jpg" loading="lazy"></div>
+                    <a href="#" class="cat-btn">Desserts Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPENING TIME -->
+    <div class="opening-section">
+        <div class="container">
+            <div class="opening-box">
+                <span class="badge">Make Reservation</span>
+                <h2>Opening Time</h2>
+                <span class="dots">....</span>
+                <br><br>
+                <div class="time-row">
+                    <span>Monday to Friday</span>
+                    <span>Friday to Sunday</span>
+                </div>
+                <div class="time-row-center">
+                    <span>10:00</span>
+                    <span>12:00</span>
+                </div>
+                <div class="time-row-large">
+                    <span>20:00</span>
+                    <span>22:00</span>
+                </div>
+                <a href="#" class="phone-btn">+256 1489 362</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU SECTION  -->
+    <section class="section-padding menu-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Make Reservation</span>
+                <h2>Starters & Main Dishes</h2>
+                <span class="dots">....</span>
+            </div>
+            <div class="menu-grid">
+                <!-- Col 1 -->
+                <div class="menu-group">
+                    <h5>STARTER MENU</h5>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Mushroom Arancini</span><span class="dish-price">$15.00</span></div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Butternut Squash Soup</span><span class="dish-price">$15.00</span>
+                        </div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Braised Short Ribs</span><span class="dish-price">$15.00</span>
+                        </div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Mushroom Arancini</span><span class="dish-price">$15.00</span></div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="menu-group">
+                    <h5>MAIN DISHES</h5>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Mushroom Arancini</span><span class="dish-price">$15.00</span></div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Butternut Squash Soup</span><span class="dish-price">$15.00</span>
+                        </div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Braised Short Ribs</span><span class="dish-price">$15.00</span>
+                        </div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top"><span>Mushroom Arancini</span><span class="dish-price">$15.00</span></div>
+                        <div class="dish-desc">Ricotta, goat cheese, beetroot and dateline.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  CHEFS SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Team Members</span>
+                <h2>Our Popular Chefs</h2>
+                <span class="dots">....</span>
+            </div>
+            <div class="chefs-grid">
+                <!-- Chef 1 -->
+                <div class="chef-card">
+                    <img src="assets/img/ch1.jpg" class="chef-img" loading="lazy">
+                    <div class="chef-info">
+                        <div><span class="chef-role">CO-FOUNDER</span>
+                            <h4>MIKE HARDSON</h4>
+                        </div>
+                        <a href="#" class="chef-social"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <!-- Chef 2 -->
+                <div class="chef-card">
+                    <img src="assets/img/ch2.avif" class="chef-img" loading="lazy">
+                    <div class="chef-info">
+                        <div><span class="chef-role">CO-FOUNDER</span>
+                            <h4>KENNETH OLIVER</h4>
+                        </div>
+                        <a href="#" class="chef-social"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <!-- Chef 3 -->
+                <div class="chef-card">
+                    <img src="assets/img/ch3.jpg" class="chef-img" loading="lazy">
+                    <div class="chef-info">
+                        <div><span class="chef-role">CO-FOUNDER</span>
+                            <h4>QUENTIN SAMUEL</h4>
+                        </div>
+                        <a href="#" class="chef-social"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <!-- Chef 4 -->
+                <div class="chef-card">
+                    <img src="assets/img/ch4.jpg" class="chef-img" loading="lazy">
+                    <div class="chef-info">
+                        <div><span class="chef-role">CO-FOUNDER</span>
+                            <h4>PATRICK JAMES</h4>
+                        </div>
+                        <a href="#" class="chef-social"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  TESTIMONIALS  -->
+    <section class="section-padding section-bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Clients Feedback</span>
+                <h2>What Our Customer Says</h2>
+                <span class="dots">....</span>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <div class="testi-img"><img src="assets/img/t2.avif"></div>
+                    <div>
+                        <p class="testi-text">The scallops were perfectly cooked, tender, and
+                            flavorful, paired beautifully with a creamy risotto and seasonal vegetables.</p>
+                        <h5 style="margin:0;">Kuman Tunman</h5>
+                        <span class="testi-role">WAITER</span>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-img"><img src="assets/img/t1.avif"></div>
+                    <div>
+                        <p class="testi-text">The scallops were perfectly cooked, tender, and
+                            flavorful, paired beautifully with a creamy risotto and seasonal vegetables.</p>
+                        <h5 style="margin:0;">Madison Olivia</h5>
+                        <span class="testi-role">WAITER</span>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  BLOG SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Make Reservation</span>
+                <h2>Latest Blog Insights</h2>
+                <span class="dots">....</span>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="assets/img/rw1.jpg">
+                        <div class="date-badge">09<br><span class="date-month">DEC</span></div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <i class="fas fa-user"></i> MARKUS DANIEL &nbsp; <i class="fas fa-comments"></i> 2 COMMENT
+                        </div>
+                        <h4>How Restaurants Foster Connections And Create Memories</h4>
+                        <br>
+                        <a href="#" class="read-more">Read More &rarr;</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="assets/img/rw2.jpg">
+                        <div class="date-badge">09<br><span class="date-month">DEC</span></div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <i class="fas fa-user"></i> MARKUS DANIEL &nbsp; <i class="fas fa-comments"></i> 2 COMMENT
+                        </div>
+                        <h4>Discovering Affordable Gourmet Experiences In Your City</h4>
+                        <br>
+                        <a href="#" class="read-more">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2 class="footer-logo">DELISH</h2>
+                    <p>1234, Restaurant St, South City<br>New York 0124</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Meet our team</a></li>
+                        <li><a href="#">Case stories</a></li>
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>OTHER LINK</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Creative Agency</a></li>
+                        <li><a href="#">Digital Agency</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Digital Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NEWSLETTER</h4>
+                    <p class="newsletter-intro">Subscribe us & receive our offers and updates your inbox directly</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" aria-label="Enter your email address">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container copy-flex">
+                <span>All rights reserved 2024. Delish Restaurant</span>
+                <span>Terms Of Use | Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
