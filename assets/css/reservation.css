@@ -1,138 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=BBH+Bartle&family=Heebo:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@434&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     list-style: none;
-}
-
-nav{
-    background-color: black;
-    height: 152px;
-
+    font-family: "Kumbh Sans", sans-serif;
 
 }
-.wed p{
-    font-size: 16px;
-    color: white;
-    font-family: "Jost", sans-serif;
-    
 
+header {
+    width: 100%;
+    background-color: rgba(17, 17, 17, 1);
+    padding: 0 20px;
 }
-.ikili img{
-    width: 44px;
-    height: 50px;
-}
-.delish{
+
+/* header */
+.header-text {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 400px;
-}
-.icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16.67px;
-}
-.ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 350px;
-}
-.del img{
-    width: 105px;
-    height: 23px;
-}
-.wed{
-   display: flex;
-   
-    gap: 20px;
- 
-}
-.noqte{
-    width: 6px;
-    height: 6px;
-  
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.res p{
-    font-size: 16px;
-    color: white;
-    font-family: "Jost", sans-serif;
-}
-.res{
+.header-text1,
+.header-text2 {
     display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-text p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+}
+
+.divider {
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 0.6;
+}
+.header-text:hover .divider {
+    opacity: 1;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
     gap: 20px;
 }
-.mon{
-    display: flex;
-    gap: 700px;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding-top: 15px;
-}
-.border p{
-    border-bottom: solid 1px ; color: darkgray;
-    width: 92%;
-    font-family: "Jost", sans-serif;
-}
-.border {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
 
-}
-.ul ul li{
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
-.ul ul{
-    display: flex;
-    gap:25px;
-    font-family: "Jost", sans-serif;
+.navlogo img {
+    height: 40px;
 }
 
-.butoon .line img{
-    width: 30px;
+.navbar ul {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.sag img{
-    width: 14px;
-    height: 9px;
+
+.navbar ul a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
 }
- .button button{
-    width: 245px;
+.navbar ul a:hover {
+    color: #cb3a1a;
+}
+
+
+.navbar ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cb3a1a;
+    transition: width 0.3s ease;
+}
+
+.navbar ul a:hover::after {
+    width: 100%;
+}
+
+
+.btn {
+    width: auto;
+    min-width: 180px;
     height: 50px;
-
-border: solid 1px chocolate;
-background-color: black;
-
-
-}
-.button p{
-    font-size: 14px;
-    color: white;
-    font-family: "Jost", sans-serif;
-}
-.button button{
+    border: 1px solid rgba(203, 58, 26, 1);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: aliceblue;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    gap: 14px;
-     transition: 0.5s ease-in-out;
+    padding: 0 20px;
+    white-space: nowrap;
 }
 
-.button button:hover{
-     transform: scale(1.1);
+.btn a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+.btn:hover {
+    background-color: rgba(203, 58, 26, 0.9);
+    border-color: rgba(203, 58, 26, 1);
+}
+
 .our{
- 
-background-color: #0A0A0ABA;
+    background-color: #0A0A0ABA;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,31 +139,30 @@ background-color: #0A0A0ABA;
     height: 517px;
     
 }
-.our h1{
-    color: white;
-    font-size: 72px;
-    font-family: "Jost", sans-serif;
-    padding-top: 100px;
-   
-
-}
-.our p{
-    font-size: 14px;
-    color: white;
-     font-family: "Jost", sans-serif;
-}
-.ourchef{
+.our {
+    width: 100%;
+    height: calc(100vh - 136px);
+    background-color: rgba(10, 10, 10, 0.73);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
 }
 
+.our h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
 
-
-
-
-
-
+.our p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
 
 .reservation-section{
   background-color: #111; /* Tünd arxa plan */
@@ -248,11 +244,6 @@ background-color: #0A0A0ABA;
 }
 
 
-
-
-
-
-
 .shapes-container {
   position: relative;
   width: 400px;
@@ -270,6 +261,7 @@ background-color: #0A0A0ABA;
   width: 543px;
   height: 625px;
   background-color: #bcbcbc; /* Tünd boz kvadrat */
+  object-fit: cover;
 }
 
 .small-square  img{
@@ -279,6 +271,7 @@ background-color: #0A0A0ABA;
   width: 243px;
   height: 292px;
   background-color: #bcbcbc;
+  object-fit: cover;
   border: 10px solid #f4f4f4; /* Arxa fonla eyni rəngdə çərçivə kəsik effekti verir */
 }
 
@@ -382,7 +375,7 @@ background-color: #0A0A0ABA;
 
 footer{
     background-color: black;
-    height: 531px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     padding-top: 70px;
@@ -405,6 +398,9 @@ footer .icon {
     display: flex;
     justify-content: start;
     margin-top: 30px;
+    align-items:center;
+    gap: 10px;
+
   
    
     
@@ -459,6 +455,7 @@ footer p{
      display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-bottom: 30px;
 }
 .double{
     display: flex;
@@ -501,22 +498,7 @@ footer p{
     align-items: center;
     
 }
-.last{
-    padding-bottom: 100px;
-}
-.hr hr{
-    width: 1400px;
-}
-.son2{
-    display: flex;
-   justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 320px;
-    gap:400px ;
 
-    
-}
 .hr{
     background-color: black;
     display: flex;
@@ -524,11 +506,34 @@ footer p{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
 }
 .hr p{
     color: white;
 }
 
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #999;
+  padding: 20px 50px;
+}
+
+.footer-links a {
+  color: #999;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
 
 
 
