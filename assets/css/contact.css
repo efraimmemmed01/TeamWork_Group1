@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(17, 17, 17, 1);
+    padding: 0 20px;
+}
+
+/* header */
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header-text1,
+.header-text2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-text p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+}
+
+.divider {
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 0.6;
+}
+.header-text:hover .divider {
+    opacity: 1;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navlogo img {
+    height: 40px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.navbar ul a:hover {
+    color: #cb3a1a;
+}
+
+
+.navbar ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cb3a1a;
+    transition: width 0.3s ease;
+}
+
+.navbar ul a:hover::after {
+    width: 100%;
+}
+
+
+.btn {
+    width: auto;
+    min-width: 180px;
+    height: 50px;
+    border: 1px solid rgba(203, 58, 26, 1);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.btn a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    background-color: rgba(203, 58, 26, 0.9);
+    border-color: rgba(203, 58, 26, 1);
+}
+
+
+/* Main About Section */
+.about {
+    width: 100%;
+    height: calc(100vh - 136px);
+    background-color: rgba(10, 10, 10, 0.73);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+   
+}
+
+.about h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .header-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .header-text1,
+    .header-text2 {
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .about h1 {
+        font-size: 48px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px){
+    .about h1 {
+        font-size: 36px;
+    }}
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .btn {
+        height: 44px;
+        font-size: 15px;
+}
+
+
+/* elaqe konum olan hisse*/
+.forum{
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+}
+
+.office-card {
+    background-color: white;
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;;
+    margin-top: 60px;
+  margin-bottom: 60px;}
+
+ .office-card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(112, 95, 95, 0.45) 0px 25px 20px -20px;  } 
+
+
+.office-card h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.info-hissesi {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.sekil {
+    width: 40px;
+    height: 40px;
+    border: solid 2px #ECEEF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.ikon {
+    color: #f7f5f5;
+    font-size: 18px;
+}
+
+.info-content h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info-content p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.holiday-closed {
+    color: #d84a2f;
+    font-weight: 500;
+}
+/*input hissesi*/
+
+.formlar {
+  width: 50%;
+  height: 50%;
+  background: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+  border: solid 2px rgb(250, 246, 246);  
+  margin-top: 80px;
+    margin-bottom: 80px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.formlar:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(230, 146, 63, 0.45) 0px 25px 20px -20px;  } 
+
+
+.bilmirem{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.yanasi{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.formlar form{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formlar input{
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.formlar button{
+  width: 100%;
+  padding: 12px;
+  background: #d84a2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.h3{
+    font-size: 20px ;
+}
+.unni{
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/*  hissəsi üçün responsive   elemeye basladin unutma*/
+@media (max-width: 768px) {
+
+  .forum{
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .office-card{
+    width: 100%;
+    max-width: 520px;        
+    margin: 0;                
+    padding: 24px;
+  }
+
+  .formlar{
+    width: 100%;              
+    max-width: 520px;
+    margin: 0;
+    padding: 24px;
+  }
+
+  .yanasi{
+    flex-direction: column;   
+    gap: 12px;
+  }
+
+  .formlar form{
+    max-width: 100%;
+  }
+
+  .formlar input,
+  .formlar button{
+    width: 100%;
+  }
+
+  
+  .office-card:hover,
+  .formlar:hover{
+    transform: none;
+  }
+}
+@media (max-width: 480px){
+  .forum{
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .office-card,
+  .formlar{
+    width: 100%;
+    padding: 16px;
+  }
+
+  .office-card:hover,
+  .formlar:hover{
+    transform: none;
+  }
+
+  .yanasi{
+    flex-direction: column;
+  }
+}
+
+
+
+/* FOOTER  Nurane*/
+.site-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 60px 0 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.footer-logo span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-col p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #cb3a1a;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.newsletter-form input::placeholder {
+  color: #999;
+}
+
+.newsletter-form button {
+  width: 40px;
+  height: 40px;
+  background-color: #cb3a1a;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #b32d10;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+.footer-links a {
+  color: #999;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* RESPONSIVE*/
+
+@media (max-width: 992px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-table-section {
+    text-align: left;
+    padding: 40px 20px;
+  }
+
+  .book-text {
+    margin-bottom: 20px;
+  }
+
+  .book-btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .category-card {
+    border-radius: 6px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .book-text h3 {
+    font-size: 24px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+}
